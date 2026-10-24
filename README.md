@@ -24,17 +24,17 @@
         <div class="produtos">
             <div class="cartao">
                 <img src="imagem1.png" alt="Tiara Cereja">
-                <p>Produto 1</p>
+                <p>Tiara Cereja</p>
                 <p>R$ 59,90</p>
             </div>
             <div class="cartao">
                 <img src="IMG_20260927_172430_685.jpg" alt="Parzinho Cereja">
-                <p>Produto 2</p>
+                <p>Parzinho Cereja</p>
                 <p>R$ 39,90</p>
             </div>
             <div class="cartao">
                 <img src="IMG_20260927_172432_331.jpg" alt="Tiara Bebê">
-                <p>Produto 3</p>
+                <p>Tiara Bebê</p>
                 <p>R$ 49,90</p>
             </div>
         </div>
@@ -57,30 +57,4 @@
 </html>
 
 
-const totalCarrinho = 250;
-const aviso = document.querySelector("#aviso-frete");
 
-if (totalCarrinho >= 200) {
-    aviso.textContent = "Frete grátis!";
-} else {
-    aviso.textContent = "Frete: R$ 20";
-}
-
-
-const btn = document.querySelector("#btn-menu");
-const menu = document.querySelector("#menu");
-
-btn.addEventListener("click", function () {
-    menu.classList.toggle("aberto");
-});
-
-const form = document.querySelector("#contato-form");
-const email = document.querySelector("#email");
-const erro = document.querySelector("#erro");
-
-form.addEventListener("submit", function (evento) {
-    if (email.value === "") {
-        evento.preventDefault();
-        erro.textContent = "Digite seu e-mail.";
-    }
-});
