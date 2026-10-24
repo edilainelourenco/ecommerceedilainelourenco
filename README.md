@@ -52,9 +52,14 @@
         <p>contato@isafrufru.com</p>
     </footer>
 
-  <script src="js/app.js" defer></script>
-</body>
-</html>
+<const totalCarrinho = 250;>
+<const aviso = document.querySelector("#aviso-frete")>;
+
+if (totalCarrinho >= 200) {
+    aviso.textContent = "Frete grátis!";
+} else {
+    aviso.textContent = "Frete: R$ 20";
+}
 
 
 
